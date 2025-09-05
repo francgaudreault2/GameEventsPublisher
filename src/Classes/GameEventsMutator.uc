@@ -44,6 +44,7 @@ function PrintHello() {
     Log(" : Password                            = " $ Config.Password);
     Log(" : WaitingPlayersIntervalInSecs        = " $ string(Config.WaitingPlayersIntervalInSecs));
     Log(" : WaitingPlayersIntervalInSecsExpired = " $ string(Config.WaitingPlayersIntervalInSecsExpired));
+    Log(" : MatchStartedIntervalInSecs          = " $ string(Config.MatchStartedIntervalInSecs));
     Log(" : TeamInfoJson                        = " $ Config.TeamInfoJson);
     Log(" : PlayerInfoJson                      = " $ Config.PlayerInfoJson);
     Log(" :============================================================:");
