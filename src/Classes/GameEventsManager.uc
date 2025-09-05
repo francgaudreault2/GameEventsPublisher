@@ -72,8 +72,14 @@ Begin:
 
 state MatchStarted {
 
+    function Timer() {
+        Publish('MatchStartedUpdate', -1);
+        LogInternal("GameEventsManager.MatchStartedUpdate("$Config.MatchStartedIntervalInSecs$")");
+    }
+
 Begin:
     Publish('MatchStarted', -1);
+    SetTimer(Config.MatchStartedIntervalInSecs, true);
 }
 
 state MatchEnded {
