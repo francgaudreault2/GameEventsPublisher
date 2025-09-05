@@ -10,6 +10,7 @@ var() globalconfig string   Password;
 var() globalconfig bool     Debug;
 var() globalconfig int      WaitingPlayersIntervalInSecs;
 var() globalconfig int      WaitingPlayersIntervalInSecsExpired;
+var() globalconfig int      MatchStartedIntervalInSecs;
 var() globalconfig string 	TeamInfoJson;
 var() globalconfig string 	PlayerInfoJson;
 
@@ -23,6 +24,7 @@ DefaultProperties {
 	Debug=false
 	WaitingPlayersIntervalInSecs=60
 	WaitingPlayersIntervalInSecsExpired=600
+	MatchStartedIntervalInSecs=60
 	TeamInfoJson="%Index%,%Name%,%Score%"
     PlayerInfoJson="%Id%,%Index%,%Name%,%Score%,%Ready%,%Password%,%Team%,%DieCount%,%KillCount%,%Spree%"
 }
