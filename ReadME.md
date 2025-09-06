@@ -51,6 +51,7 @@ Password=
 Debug=False
 WaitingPlayersIntervalInSecs=60
 WaitingPlayersIntervalInSecsExpired=600
+MatchStartedIntervalInSecs=60
 TeamInfoJson=%Index%,%Name%,%Score%
 PlayerInfoJson=%Id%,%Index%,%Name%,%Score%,%Ready%,%Password%,%Team%,%DieCount%,%KillCount%,%Spree%
 ```
@@ -65,6 +66,7 @@ They will be sent to "http://Host:Port/Path"
 | WaitingPlayers        | When map is loaded and every `WaitingPlayersIntervalInSecs` Interval.
 | WaitingPlayersEnd     | After configuration(`WaitingPlayersIntervalInSecsExpired`) has reached.
 | MatchStarted          | Players started playing.
+| MatchStartedUpdate    | Periodic updates for the scores.
 | FlagCapture          	| Flag has been captured. When occur `InstigatorId` will be populated with PlayerId.
 | MatchEnded            | Match ended.
 
